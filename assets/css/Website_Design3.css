@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flexbox;
+    flex-direction: column;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+/* AGREGANDO ESTILOS AL HEADER */
+header{
+    background-image: url(../img/hockey_2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 0% 95%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+header>h1{
+    order: 1;
+    font-size: 3em;
+    font-weight: 200;
+    margin: 10px;
+}
+/* AGREGANDO ESTILO A BARRA DE NAVEGACION */
+header>nav{
+    display:flex;
+    order: 0;
+    font-size: 1.3em;
+    background-color: black;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    position: sticky;
+    top: 0px;
+}
+nav>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+[href="#"]{
+    background-color: white;
+    padding: 10px 2px;
+    color: black;
+}
+/* POSICIONANDO EL LOGO */
+header>figure{
+    order: 2;
+    position: relative;
+    top:60px;
+    left: 550px;
+    z-index: 1;
+}
+figure>img{
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    width: 100vw;
+    height: 100%;
+}
+/* AGREGANDO ESTILO AL SIDE */
+aside{
+    display: flex;
+    flex-direction: row;
+    width: 19vw;   
+}
+aside>figure{
+    background-image: url(../img/hockey_2.jpg);
+    width: 19vw;
+    height: 100%;
+    background-size: cover;
+    background-position: 85% 0%;
+
+}
+/* COLOCANDO MENSAJE SORPRESA*/
+.message{
+    width: 19vw;
+    height: 100%;
+    background-color: rgb(48, 45, 45);
+    color: azure;
+    font-size: xx-large;
+    position: absolute;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+aside>figure:hover{
+    opacity: 0.07;
+    transition: opacity 500ms;
+}
+/* DANDO ESTILO A LA SECCION DONDE SE ENCONTRARAN ARTICULOS Y TABLA */
+section{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+}
+h2{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+    font-size: 1.6em;
+    width: 100vw;
+    right: 0px;
+}
+article,.article,.tabla{
+    margin-top:40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 30px;
+}
+/* DANDO ESTILO A TABLA */
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.fall-sche{
+    font-size: 2.5em;
+    font-weight: 100;
+}
+table{
+    width: 80%;
+    height: 500px;
+    text-align: center;
+}
+.tabla table, tr, th, td{
+    border: 2px double rgb(172, 11, 11);
+    border-collapse: collapse;
+}
+thead{
+    background-color: rgb(232, 109, 109);
+    height: 50px;
+}
+.foot-cap{
+    caption-side: bottom;
+    font-style: oblique;
+}
+/* ESTILO A ARTICLES EN SCHUDELE */
+.lineas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+#phone-email div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+h3{
+    font-style: oblique;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+/* DANDO ESTILOS A LISTAS DE RULES */
+.first-ol{
+    margin-left: 20px;
+    text-indent: 5px;
+}
+.second-ol{
+    list-style: lower-alpha;
+    margin-left: 30px;
+}
+.first-ul{
+    list-style-type: circle;
+    margin-left: 30px;
+}
