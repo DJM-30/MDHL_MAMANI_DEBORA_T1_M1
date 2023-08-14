@@ -91,6 +91,7 @@ aside>figure{
 .message{
     width: 19vw;
     height: 100%;
+    padding: 15px;
     background-color: rgb(48, 45, 45);
     color: azure;
     font-size: xx-large;
@@ -183,4 +184,90 @@ h3{
 .first-ul{
     list-style-type: circle;
     margin-left: 30px;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe{
+    width: 50%;
+    margin-bottom: 15px;
+}
+/* formulario */
+
+form{
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+fieldset label{
+    width: 50%;
+}
+fieldset{
+    display: flex;
+    align-items: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    width: 100%;
+    font-size: 1.1em;
+}
+fieldset legend{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.cuadroText{
+    border: 0px;
+    border-bottom: 1px solid orangered;
+    width: 60%;
+    height: 35px;
+    text-indent: 5px;
+}
+.elementary-school{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+.elementary-school div{
+    margin: 25px 75px;
+}
+.grade{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grade div{
+    margin: 50px;
+}
+.position-check, .uniform{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.position-check div, .uniform div{
+    margin: 25px 50px;
+}
+.bloque{
+    display: flex;
+    flex-direction: column;
+
+}
+.permision{
+    display: flex;
+    flex-direction: column;
+}
+.boton-enviar{
+    padding: 15px;
+    font-size: 2em;
+    background-color: rgba(235, 89, 36, 0.86);
+    font-weight: bolder;
 }

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home MDHL</title>
+    <link rel="stylesheet" href="./assets/css/Website_Design3.css">
+    <link rel="shortcut icon" href=".//assets/img/Logo_Mighty_ducks-01.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo-mighty-ducks" width="150">
+        </figure>
+
+        <h1>Mighty Ducks Hockey League</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="./about.html">About MDHL</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./rules.html">Rules</a>
+            <a href="#">Registro</a>
+            <a href="./showdata.html">Datos</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <figure>
+                <!-- <img src="./assets/img/hockey_1.jpg" alt="hockey" width="200"> -->
+            </figure>
+            <div class="message">"Sobre el hielo, somos un equipo; en el corazón, somos una familia."</div>
+        </aside>
+        <section>
+            <h2>Regisration Form</h2>
+            <form action="showdata.html" method="get">
+                <fieldset>
+                    <label>
+                        <span>Player's First Name: </span>
+                        <input class="cuadroText" type="text" name="nombre" placeholder="here name" required>
+                    </label>
+                    <label>
+                        <span>Last Name: </span>
+                        <input class="cuadroText" type="text" name="apellido" placeholder="here last name" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <span>Street Adress</span>
+                        <input class="cuadroText" type="text" name="direccion" placeholder="here adress" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <span>City: </span>
+                        <input class="cuadroText" type="text" name="ciudad" placeholder="city" required>
+                    </label>
+                    <label>
+                        <span>ZIP Code: </span>
+                        <input class="cuadroText" type="text" name="codpostal" placeholder="codigo postal" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>
+                        <span>Birthday Date(mm/dd/yyyy): </span>
+                        <input type="date" name="fechNac" required>
+                    </label>
+                    <label>
+                        <span>Gender: </span>
+
+                        <input type="radio" name="genero" value="Female">
+                        <span>Female</span>
+                        
+                        <input type="radio" name="genero" value="Male">
+                        <span>Male</span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <span>Grade: </span>
+                    <div class="grade">
+                        <div>
+                            <input type="radio" name="grado" value="Pre-School">
+                            <span>Pre-School</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="grado" value="1st">
+                            <span>1st</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="grado" value="2nd">
+                            <span>2nd</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="grado" value="3rd">
+                            <span>3rd</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="grado" value="4th">
+                            <span>4th</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="grado" value="5th">
+                            <span>5th</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="bloque">
+                    <legend>Which elementary school do you live near?</legend>
+                    <span>Closest School: </span>
+                    <div class="elementary-school">
+                        <div>
+                            <input type="radio" name="escuela" value="AJ-Katzenmaier">
+                            <span>AJ Katzenmaier</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="escuela" value="Greenbay">
+                            <span>Greenbay</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="escuela" value="Howard-a-Yeager">
+                            <span>Howard-a-Yeager</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="escuela" value="Marjorie-P-Hart">
+                            <span>Marjorie-P-Hart</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="escuela" value="North-Elementary">
+                            <span>North-Elementary</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="escuela" value="South-Elementary">
+                            <span>South-Elementary</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What position(s) do you normally play?(check all that apply)</legend>
+                    <div class="position-check">
+                        <div>
+                            <input type="checkbox" name="posicion" value="Forward">
+                            <span>Forward</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="posicion" value="Defense">
+                            <span>Defense</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="posicion" value="Midfield">
+                            <span>Midfield</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="posicion" value="Goalkeeper">
+                            <span>Goalkeeper</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Uniform Size: </legend>
+                    <div class="uniform">
+                        <div>
+                            <input type="radio" name="uniSize" value="Youth-Small">
+                            <span>Youth-Small</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Youth-Medium">
+                            <span>Youth-Medium</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Youth-Large">
+                            <span>Youth-Large</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Small">
+                            <span>Small</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Medium">
+                            <span>Medium</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Large">
+                            <span>Large</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="uniSize" value="Extra-Large">
+                            <span>Extra-Large</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="permision">
+                    <div>
+                        <legend>Permision to Play</legend>
+                        <p>By signing below, I herebyagree and authorized the above. In adition, by signing below, also acknowledge that I have read the cancellation pollicy and agree to its terms</p>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Parent/Guardian Signature: </span>
+                            <input class="cuadroText" type="text" name="nameParent" placeholder="here signature" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Date: </span>
+                            <input type="datetime-local" name="fechaAct">
+                        </label>
+                    </div>
+                </fieldset>
+                <input class="boton-enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
